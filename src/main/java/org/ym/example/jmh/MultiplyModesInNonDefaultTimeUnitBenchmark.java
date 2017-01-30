@@ -1,4 +1,4 @@
-package org.ym.example.jmh.inlinecode;
+package org.ym.example.jmh;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
@@ -9,9 +9,7 @@ import java.util.concurrent.TimeUnit;
 import static org.openjdk.jmh.annotations.Mode.AverageTime;
 import static org.openjdk.jmh.annotations.Mode.SingleShotTime;
 
-/**
- * Created by ork on 30.01.17.
- */
+
 public class MultiplyModesInNonDefaultTimeUnitBenchmark {
 
 

@@ -1,4 +1,4 @@
-package org.ym.example.jmh.inlinecode;
+package org.ym.example.jmh;
 
 import org.openjdk.jmh.annotations.*;
 
