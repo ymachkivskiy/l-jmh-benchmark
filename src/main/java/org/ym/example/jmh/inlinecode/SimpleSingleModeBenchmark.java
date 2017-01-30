@@ -23,7 +23,7 @@
  * questions.
  */
 
-package org.ym.example.inlinecode;
+package org.ym.example.jmh.inlinecode;
 
 import org.openjdk.jmh.annotations.Benchmark;
 
