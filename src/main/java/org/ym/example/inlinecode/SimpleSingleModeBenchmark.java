@@ -23,15 +23,29 @@
  * questions.
  */
 
-package org.ym.example;
+package org.ym.example.inlinecode;
 
 import org.openjdk.jmh.annotations.Benchmark;
 
-public class MyBenchmark {
+import java.math.BigDecimal;
+
+public class SimpleSingleModeBenchmark {
+
 
     @Benchmark
-    public void testMethod() {
-        // place your benchmarked code here
+    public BigDecimal testBigDecimalMultiplication() {
+        BigDecimal base = BigDecimal.valueOf(2424.2);
+        BigDecimal multiplier = BigDecimal.valueOf(23.2);
+
+        return base.multiply(multiplier);
+    }
+
+    @Benchmark
+    public BigDecimal testBigDecimalAddition() {
+        BigDecimal first = BigDecimal.valueOf(34332);
+        BigDecimal second = BigDecimal.valueOf(20);
+
+        return first.add(second);
     }
 
 }
